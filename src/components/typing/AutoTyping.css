@@ -1,0 +1,37 @@
+.autotyping {
+    font-family: 'Playfair Display', serif;
+    color: #171717;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.autotyping > span {
+    color: #0008ff;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .autotyping {
+        font-size: 2.0em;
+        font-weight: 800;
+    }
+
+    .autotyping > span {
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 480px) {
+    .autotyping {
+        font-size: 1.9em;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .autotyping > span {
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+}
