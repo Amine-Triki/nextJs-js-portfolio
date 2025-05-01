@@ -1,61 +1,47 @@
-import Img10 from "../../../public/10.webp"
-import Img9 from "../../../public/9.webp"
 import Img8 from "../../../public/8.webp"
-import Img7 from "../../../public/7.webp"
-import Img6 from "../../../public/6.webp"
-import Img5 from "../../../public/5.webp"
 import Img4 from "../../../public/4.webp"
 import Img3 from "../../../public/3.webp"
 import Img2 from "../../../public/2.webp"
+import ImgNext from "../../../public/next  portfolio.webp"
+import ImgQuran from "../../../public/quran.webp"
+import ImgWeatherR from "../../../public/wather-react-pwa.webp"
+import ImgPorW from "../../../public/wordpress-portfolio.webp"
+import ImgGen from "../../../public/generate-qr-code.webp"
+import ImgCurr from "../../../public/currencyconverter.webp"
+import ImgMui from "../../../public/portfolio-mui.webp"
+
 
 const projects = [
     {
       category: 'React',
       title: 'Weather Website',
-      description: 'React +  BOOTSTRAP + PWA',
-      link: 'https://pwa.aminetriki.com.tn/',
-      imageSrc: Img10,
+      description: 'React + vite + BOOTSTRAP + PWA',
+      link: 'https://wather-react-pwa.vercel.app/',
+      github:'https://github.com/Amine-Triki/wather-react-pwa',
+      imageSrc: ImgWeatherR,
     },
-    {
-      category: 'Vue-js',
-      title: 'Weather Website',
-      description: 'Vue js + vite + BOOTSTRAP',
-      link: 'https://amine-triki.github.io/wather-vuejs/',
-      imageSrc: Img9,
-    },
+
     {
       category: 'JavaScript',
       title: 'Weather Website',
       description: 'JavaScript + BOOTSTRAP',
       link: 'https://amine-triki.github.io/Weather-js/',
+      github:'https://github.com/Amine-Triki/Weather-js',
       imageSrc: Img8,
     },
-    {
-      category: 'Vue-js',
-      title: 'personal website',
-      description: 'Vue js + tailwind css',
-      link: 'https://amine-triki.github.io/vue-tailwind/',
-      imageSrc: Img7,
-    },
-    {
-      category: 'Vue-js',
-      title: 'personal website',
-      description: 'Vue js + BOOTSTRAP',
-      link: 'https://amine-triki.github.io/vuejs-bootstrap/',
-      imageSrc: Img6,
-    },
+    
     {
       category: 'Wordpress',
       title: 'personal website',
       description: 'WORDPRESS',
       link: 'https://aminetriki.com.tn/',
-      imageSrc: Img5,
+      imageSrc: ImgPorW,
     },
     {
       category: 'Wordpress',
       title: 'M.J.S.E website',
       description: 'WORDPRESS',
-      link: 'https://mjse.com.tn/',
+      link: 'https://mjses.com',
       imageSrc: Img4,
     },
     {
@@ -63,6 +49,7 @@ const projects = [
       title: 'personal website',
       description: 'JavaScript + BOOTSTRAP',
       link: 'https://amine-triki.github.io/portfolio/',
+      github:'https://github.com/Amine-Triki/portfolio',
       imageSrc: Img3,
     },
     {
@@ -70,9 +57,52 @@ const projects = [
       title: 'personal website',
       description: 'JavaScript + BOOTSTRAP',
       link: 'https://amine-triki.github.io/',
+      github:'https://github.com/Amine-Triki/Amine-Triki.github.io',
       imageSrc: Img2,
     },
+
+    {
+      category: 'React',
+      title: 'quran with voice',
+      description: 'React + vite + BOOTSTRAP + PWA',
+      link: 'https://quran-with-voice.vercel.app/',
+      github:'https://github.com/Amine-Triki/quran-with-voice',
+      imageSrc: ImgQuran,
+    },
     
+
+    {
+      category: 'React',
+      title: 'personal website',
+      description: 'Nextjs + Tailwind css + PWA',
+      link: 'https://next-js-js-portfolio.vercel.app/',
+      github:'https://github.com/Amine-Triki/nextJs-js-portfolio',
+      imageSrc: ImgNext,
+    },
+    {
+      category: 'React',
+      title: 'generate qr code Website',
+      description: 'React + Tailwind css',
+      link: 'https://generate-qr-code-amine.vercel.app/',
+      github:'https://github.com/Amine-Triki/generate-qr-code',
+      imageSrc: ImgGen,
+    },
+    {
+      category: 'React',
+      title: 'Currency Converter Website',
+      description: 'React + bootstrap',
+      link: '',
+      github:'https://github.com/Amine-Triki/CurrencyConverterJs',
+      imageSrc: ImgCurr,
+    },
+    {
+      category: 'React',
+      title: 'personal website',
+      description: 'React + Mui',
+      link: 'https://portfolio-mui-delta.vercel.app/',
+      github:'https://github.com/Amine-Triki/portfolio-mui',
+      imageSrc: ImgMui,
+    },
     // Add more projects as needed
   ];
 

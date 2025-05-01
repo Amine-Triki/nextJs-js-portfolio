@@ -8,7 +8,8 @@ const Projects = () => {
     const switchCategories = (category) => {
       setActiveCategory(category);
     };
-  
+    const categories = ['all', 'JavaScript', 'Wordpress', 'React'];
+
     return (
       <main>
 
@@ -16,37 +17,17 @@ const Projects = () => {
           <div className="container mx-auto my-5">
 
           <ul className="switcher rounded-md bg-yellow-500 text-white flex md:flex-row py-3 justify-around px-0 flex-wrap sm:flex-col mb-10">
-                        <li
-                            className={`cursor-pointer ${activeCategory === 'all' ? 'text-fuchsia-500 active' : 'hover:text-emerald-600'}`}
-                            onClick={() => switchCategories('all')}
-                        >
-                            All works
-                        </li>
-                        <li
-                            className={`cursor-pointer ${activeCategory === 'Vue-js' ? 'text-fuchsia-500 active' : 'hover:text-emerald-600'}`}
-                            onClick={() => switchCategories('Vue-js')}
-                        >
-                            Vue js
-                        </li>
-                        <li
-                            className={`cursor-pointer ${activeCategory === 'JavaScript' ? 'text-fuchsia-500 active' : 'hover:text-emerald-600'}`}
-                            onClick={() => switchCategories('JavaScript')}
-                        >
-                            JavaScript
-                        </li>
-                        <li
-                            className={`cursor-pointer ${activeCategory === 'Wordpress' ? 'text-fuchsia-500 active' : 'hover:text-emerald-600'}`}
-                            onClick={() => switchCategories('Wordpress')}
-                        >
-                            Wordpress
-                        </li>
-                        <li
-                            className={`cursor-pointer ${activeCategory === 'React' ? 'text-fuchsia-500 active' : 'hover:text-emerald-600'}`}
-                            onClick={() => switchCategories('React')}
-                        >
-                            React
-                        </li>
-                    </ul>
+  {categories.map((category) => (
+    <li
+      key={category}
+      className={`cursor-pointer ${activeCategory === category ? 'text-fuchsia-500 active' : 'hover:text-emerald-600'}`}
+      onClick={() => switchCategories(category)}
+    >
+      {category === 'all' ? 'All works' : category}
+    </li>
+  ))}
+</ul>
+
             <div className="gallery text-left ">
               <div className="gap-10 flex justify-center flex-wrap ">
                 {projects
@@ -58,9 +39,18 @@ const Projects = () => {
                         <div className="card-body mt-5 ">
                           <h5 className="card-title text-blue-400 font-bold text-lg	">{project.title}</h5>
                           <p className="card-text mb-10">{project.description}</p>
-                          <a href={project.link} className="bg-green-400 px-3 py-2 rounded-lg "  rel="noreferrer" target="_blank">
-                            Visit
-                          </a>
+                          <div className='flex justify-around'>
+                            {project.category !== 'Wordpress'&& (
+                            <a href={project.link} className="bg-yellow-400 px-3 py-2 rounded-lg "  rel="noreferrer" target="_blank">
+                              Github
+                            </a>
+                            )}
+                            {project.link !== '' && (
+                            <a href={project.link} className="bg-blue-400 px-3 py-2 rounded-lg "  rel="noreferrer" target="_blank">
+                              Visit
+                            </a>
+                            )}
+                            </div>
                         </div>
                       </div>
                     </div>
