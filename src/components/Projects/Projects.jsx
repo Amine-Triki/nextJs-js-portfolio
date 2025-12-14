@@ -24,7 +24,7 @@ const Projects = () => {
       setActiveCategory(category);
     };
     
-    const categories = ['all', 'JavaScript', 'Wordpress', 'React', 'NextJs'];
+    const categories = ['all', 'JavaScript', 'Wordpress', 'React', 'NextJs' , 'vue' , 'Astro'];
 
     if (loading) {
       return (
