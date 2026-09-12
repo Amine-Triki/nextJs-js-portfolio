@@ -1,10 +1,14 @@
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 import Nav from "@/components/nav/Nav" ;
 import Footer from "@/components/footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = localFont({
+  src: "../font/Inter/Inter-VariableFont_opsz,wght.ttf",
+  weight: "100 900",
+  style: "normal",
+});
 
 
 
